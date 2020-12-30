@@ -34,6 +34,7 @@ extension UIView {
 }
 
 extension String {
+    // database cannot have strings with dots as key
      func convertEmail() -> String {
         return self.replacingOccurrences(of: "@", with: "-").self.replacingOccurrences(of: ".", with: "-")
     }

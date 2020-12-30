@@ -111,6 +111,8 @@ class RegistrationViewController: UIViewController {
             return
         }
         
+        // Last parameter is a closure(trailing closure), it will be called inside the registerNewUser function
+        // callback
         AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
             DispatchQueue.main.async {
                 if registered {
