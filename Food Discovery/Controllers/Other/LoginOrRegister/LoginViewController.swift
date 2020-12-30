@@ -5,6 +5,7 @@
 //  Created by Jinglun Zhou on 2020/12/29.
 //
 
+import SafariServices
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -143,13 +144,40 @@ class LoginViewController: UIViewController {
         view.addSubview(createAccountButton)
     }
     
-    @objc private func didTapLoginButton(){}
+    @objc private func didTapLoginButton(){
+        passwordField.resignFirstResponder()
+        usernameEmailField.resignFirstResponder()
+        
+        guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,
+              let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
+            return
+        }
+    }
     
-    @objc private func didTapTermsButton(){}
+    @objc private func didTapTermsButton(){
+        // replace with real URL later
+        guard let url = URL(string: "https://www.linkedin.com/in/jinglunzhou/") else {
+            return
+        }
+        
+        let vc = SFSafariViewController(url: url)
+        present(vc,animated: true)
+    }
     
-    @objc private func didTapPrivacyButton(){}
+    @objc private func didTapPrivacyButton(){
+        // replace with real URL later
+        guard let url = URL(string: "https://www.linkedin.com/in/jinglunzhou/") else {
+            return
+        }
+        
+        let vc = SFSafariViewController(url: url)
+        present(vc,animated: true)
+    }
     
-    @objc private func didTapCreateAccountButton(){}
+    @objc private func didTapCreateAccountButton(){
+        let vc = RegistrationViewController()
+        present(vc,animated: true)
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {
