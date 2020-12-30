@@ -12,7 +12,20 @@ import FirebaseAuth
 public class AuthManager {
     static let shared = AuthManager()
     
-    public func registerNewUser(username: String, email: String, password: String) {
+    public func registerNewUser(username: String, email: String, password: String, completion: @escaping (Bool) -> Void) {
+        DBManager.shared.canCreateNewUser(with: email, username: username) {
+            canCreate in
+            if canCreate {
+                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                    guard error == nil, result != nil else {
+                        completion(false)
+                        return
+                    }
+                }
+            } else {
+                completion(false)
+            }
+        }
         
     }
     

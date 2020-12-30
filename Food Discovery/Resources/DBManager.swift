@@ -11,6 +11,10 @@ import FirebaseDatabase
 public class DBManager {
     static let shared = DBManager()
     
+    public func canCreateNewUser(with email:String, username: String, completion: (Bool) -> Void) {
+        
+    }
+    
 
     
 }
