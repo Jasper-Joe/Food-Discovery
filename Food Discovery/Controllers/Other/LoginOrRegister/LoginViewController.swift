@@ -152,6 +152,29 @@ class LoginViewController: UIViewController {
               let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
             return
         }
+        
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"), usernameEmail.contains(".") {
+            email = usernameEmail
+        } else {
+            username = usernameEmail
+        }
+        
+        AuthManager.shared.loginUser(username: username, email: email, password: password) {
+            success in
+            DispatchQueue.main.async {
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "Login Error", message: "There is something wrong with your password or username", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title:"Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
     }
     
     @objc private func didTapTermsButton(){
