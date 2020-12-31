@@ -17,6 +17,8 @@ public class DBManager {
     }
     
     // completion: Async callback for result
+    // Escaping Closure: An escaping closure is a closure that's called after the function it was passed to returns.
+    // It outlives the function it was passed to.
     public func insertNewUser(with email: String, username: String, completion: @escaping (Bool) -> Void) {
         db.child(email.convertEmail()).setValue(["username": username]) { error, _ in
             if error == nil {
