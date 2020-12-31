@@ -62,6 +62,7 @@ final class SettingsViewController: UIViewController {
                         }
                     } else {
                         // error
+                        fatalError("There is an error when logging out")
                     }
                 }
             })
