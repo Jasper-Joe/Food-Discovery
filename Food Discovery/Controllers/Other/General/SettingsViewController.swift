@@ -38,6 +38,31 @@ final class SettingsViewController: UIViewController {
     }
     
     private func configureModels() {
+        data.append([
+            SettingCellModel(title:"Edit Profile") { [weak self] in
+                            
+            },
+            SettingCellModel(title:"Invite Friends") { [weak self] in
+                            
+            },
+            SettingCellModel(title:"Save Posts") { [weak self] in
+                            
+            }
+        ])
+        
+        data.append([
+            SettingCellModel(title:"Terms of Service") { [weak self] in
+                            
+            },
+            SettingCellModel(title:"Privacy") { [weak self] in
+                
+            },
+            SettingCellModel(title:"Feedback") { [weak self] in
+                
+            },
+            
+        ])
+        
         let section = [
             SettingCellModel(title: "Log Out") { [weak self] in
                 self?.didTapLogOut()

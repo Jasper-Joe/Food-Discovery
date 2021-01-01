@@ -33,6 +33,10 @@
 		BA5F8ADF259BE6FC00D572DB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8ADE259BE6FC00D572DB /* AuthManager.swift */; };
 		BA5F8AE2259BE74700D572DB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8AE1259BE74700D572DB /* StorageManager.swift */; };
 		BA8B1B4E259CD0F700529703 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8B1B4D259CD0F700529703 /* Extensions.swift */; };
+		BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */; };
+		BADCE5E8259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */; };
+		BADCE5EB259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5EA259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift */; };
+		BADCE5EE259ED021004D85AA /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5ED259ED021004D85AA /* FeedPostGeneralTableViewCell.swift */; };
 		EAF966F01B885DEDF7EA7E95 /* Pods_Food_Discovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925086C3E2D34BC0B05D8FEE /* Pods_Food_Discovery.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,10 @@
 		BA5F8ADE259BE6FC00D572DB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		BA5F8AE1259BE74700D572DB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		BA8B1B4D259CD0F700529703 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		BADCE5EA259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		BADCE5ED259ED021004D85AA /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		BA5F8A88259BCC6700D572DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BADCE5E2259ECC5A004D85AA /* Cells */,
 				BA5F8A8B259BCD2C00D572DB /* Storyboards */,
 				BA5F8A7A259BCC1B00D572DB /* Assets.xcassets */,
 			);
@@ -212,6 +221,25 @@
 				BA5F8ABF259BD23100D572DB /* PublishViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		BADCE5E2259ECC5A004D85AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BADCE5E6259ECF48004D85AA /* HomeFeed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BADCE5E6259ECF48004D85AA /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */,
+				BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */,
+				BADCE5EA259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift */,
+				BADCE5ED259ED021004D85AA /* FeedPostGeneralTableViewCell.swift */,
+			);
+			path = HomeFeed;
 			sourceTree = "<group>";
 		};
 		FBBCA49AD9EB8BC1BEC5221C /* Pods */ = {
@@ -342,8 +370,11 @@
 				BA5F8AAD259BD0F400D572DB /* EditProfileViewController.swift in Sources */,
 				BA5F8AAA259BD0D900D572DB /* PostViewController.swift in Sources */,
 				BA5F8AE2259BE74700D572DB /* StorageManager.swift in Sources */,
+				BADCE5EE259ED021004D85AA /* FeedPostGeneralTableViewCell.swift in Sources */,
 				BA5F8AA0259BCFEC00D572DB /* LoginViewController.swift in Sources */,
+				BADCE5EB259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift in Sources */,
 				BA5F8A73259BCC1900D572DB /* HomeViewController.swift in Sources */,
+				BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */,
 				BA5F8AA7259BD0B300D572DB /* SettingsViewController.swift in Sources */,
 				BA5F8A6F259BCC1900D572DB /* AppDelegate.swift in Sources */,
 				BA5F8AB0259BD13800D572DB /* ListViewController.swift in Sources */,
@@ -359,6 +390,7 @@
 				BA5F8A98259BCF0F00D572DB /* ProfileViewController.swift in Sources */,
 				BA5F8ABA259BD1AD00D572DB /* SearchResultViewController.swift in Sources */,
 				BA5F8ADC259BE5A200D572DB /* DBManager.swift in Sources */,
+				BADCE5E8259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift in Sources */,
 				BA5F8A91259BCEAD00D572DB /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
