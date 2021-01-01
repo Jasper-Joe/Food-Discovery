@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5F8A9D259BCFB900D572DB /* Other */,
-				BA5F8A9B259BCF5700D572DB /* Core Tabs */,
+				BA5F8A9B259BCF5700D572DB /* Main Tabs */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		BA5F8A9B259BCF5700D572DB /* Core Tabs */ = {
+		BA5F8A9B259BCF5700D572DB /* Main Tabs */ = {
 			isa = PBXGroup;
 			children = (
 				BA5F8A72259BCC1900D572DB /* HomeViewController.swift */,
@@ -187,7 +187,7 @@
 				BA5F8A93259BCEE300D572DB /* NotificationsViewController.swift */,
 				BA5F8A97259BCF0F00D572DB /* ProfileViewController.swift */,
 			);
-			path = "Core Tabs";
+			path = "Main Tabs";
 			sourceTree = "<group>";
 		};
 		BA5F8A9D259BCFB900D572DB /* Other */ = {

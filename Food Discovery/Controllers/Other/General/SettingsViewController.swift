@@ -5,6 +5,7 @@
 //  Created by Jinglun Zhou on 2020/12/29.
 //
 
+import SafariServices
 import UIKit
 
 struct SettingCellModel {
@@ -40,25 +41,29 @@ final class SettingsViewController: UIViewController {
     private func configureModels() {
         data.append([
             SettingCellModel(title:"Edit Profile") { [weak self] in
+                self?.didTapEditProfile()
                             
             },
             SettingCellModel(title:"Invite Friends") { [weak self] in
+                self?.didTapInviteFriends()
                             
             },
             SettingCellModel(title:"Save Posts") { [weak self] in
+                self?.didTapSavePosts()
                             
             }
         ])
         
         data.append([
             SettingCellModel(title:"Terms of Service") { [weak self] in
+                self?.openURL(type: .terms)
                             
             },
             SettingCellModel(title:"Privacy") { [weak self] in
-                
+                self?.openURL(type: .privacy)
             },
             SettingCellModel(title:"Feedback") { [weak self] in
-                
+                self?.openURL(type: .help)
             },
             
         ])
@@ -70,6 +75,41 @@ final class SettingsViewController: UIViewController {
             }
         ]
         data.append(section)
+    }
+    
+    enum SettingsURLType {
+        case terms, privacy, help
+    }
+    
+    private func openURL(type: SettingsURLType) {
+        let urlString: String
+        switch type {
+        case .terms: urlString = ""
+        case .privacy: urlString = ""
+        case .help: urlString = ""
+        }
+        
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        let vc = SFSafariViewController(url:url)
+        present(vc,animated: true)
+    }
+    
+    private func didTapSavePosts() {
+        
+    }
+    
+    private func didTapInviteFriends() {
+        
+    }
+    
+    private func didTapEditProfile() {
+        let vc = EditProfileViewController()
+        vc.title = "Edit Profile"
+        let navigationVC = UINavigationController(rootViewController: vc)
+        present(navigationVC,animated: true)
     }
     
     private func didTapLogOut() {
@@ -115,6 +155,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
