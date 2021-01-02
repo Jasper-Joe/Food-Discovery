@@ -109,6 +109,7 @@ final class SettingsViewController: UIViewController {
         let vc = EditProfileViewController()
         vc.title = "Edit Profile"
         let navigationVC = UINavigationController(rootViewController: vc)
+        navigationVC.modalPresentationStyle = .fullScreen
         present(navigationVC,animated: true)
     }
     
@@ -152,6 +153,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         return data[section].count
     }
     
+    // connect data with actuall cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.section][indexPath.row].title
@@ -159,6 +161,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    // connect action when tapping the cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let model = data[indexPath.section][indexPath.row]

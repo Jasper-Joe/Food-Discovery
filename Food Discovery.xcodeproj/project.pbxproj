@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA10366E25A0DC3E00A07745 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10366D25A0DC3E00A07745 /* Models.swift */; };
+		BA4A8FA1259F93A500674FCA /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A8FA0259F93A500674FCA /* FormTableViewCell.swift */; };
+		BA4A8FA5259FB71E00674FCA /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A8FA4259FB71E00674FCA /* PhotoCollectionViewCell.swift */; };
+		BA4A8FA9259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A8FA8259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		BA4A8FAC259FB80200674FCA /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A8FAB259FB80200674FCA /* ProfileTabsCollectionReusableView.swift */; };
 		BA5F8A6F259BCC1900D572DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8A6E259BCC1900D572DB /* AppDelegate.swift */; };
 		BA5F8A71259BCC1900D572DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8A70259BCC1900D572DB /* SceneDelegate.swift */; };
 		BA5F8A73259BCC1900D572DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8A72259BCC1900D572DB /* HomeViewController.swift */; };
@@ -44,6 +49,11 @@
 		3A1AA84E6C5A2F1FD1175B21 /* Pods-Food Discovery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Discovery.debug.xcconfig"; path = "Target Support Files/Pods-Food Discovery/Pods-Food Discovery.debug.xcconfig"; sourceTree = "<group>"; };
 		838618356A65CFD43DAD69E6 /* Pods-Food Discovery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Discovery.release.xcconfig"; path = "Target Support Files/Pods-Food Discovery/Pods-Food Discovery.release.xcconfig"; sourceTree = "<group>"; };
 		925086C3E2D34BC0B05D8FEE /* Pods_Food_Discovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Discovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA10366D25A0DC3E00A07745 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BA4A8FA0259F93A500674FCA /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		BA4A8FA4259FB71E00674FCA /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA4A8FA8259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		BA4A8FAB259FB80200674FCA /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		BA5F8A6B259BCC1900D572DB /* Food Discovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Discovery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5F8A6E259BCC1900D572DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA5F8A70259BCC1900D572DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +108,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA4A8FA3259FB6D800674FCA /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A8FA8259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift */,
+				BA4A8FAB259FB80200674FCA /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
+			sourceTree = "<group>";
+		};
 		BA5F8A62259BCC1900D572DB = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +160,7 @@
 		BA5F8A88259BCC6700D572DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA4A8FA3259FB6D800674FCA /* CollectionView Headers */,
 				BADCE5E2259ECC5A004D85AA /* Cells */,
 				BA5F8A8B259BCD2C00D572DB /* Storyboards */,
 				BA5F8A7A259BCC1B00D572DB /* Assets.xcassets */,
@@ -151,6 +171,7 @@
 		BA5F8A89259BCC7F00D572DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA10366D25A0DC3E00A07745 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				BADCE5E6259ECF48004D85AA /* HomeFeed */,
+				BA4A8FA0259F93A500674FCA /* FormTableViewCell.swift */,
+				BA4A8FA4259FB71E00674FCA /* PhotoCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -376,20 +399,25 @@
 				BA5F8A73259BCC1900D572DB /* HomeViewController.swift in Sources */,
 				BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */,
 				BA5F8AA7259BD0B300D572DB /* SettingsViewController.swift in Sources */,
+				BA4A8FA1259F93A500674FCA /* FormTableViewCell.swift in Sources */,
 				BA5F8A6F259BCC1900D572DB /* AppDelegate.swift in Sources */,
 				BA5F8AB0259BD13800D572DB /* ListViewController.swift in Sources */,
 				BA8B1B4E259CD0F700529703 /* Extensions.swift in Sources */,
 				BA5F8AC0259BD23100D572DB /* PublishViewController.swift in Sources */,
+				BA4A8FA9259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				BA5F8ADF259BE6FC00D572DB /* AuthManager.swift in Sources */,
 				BA5F8A8E259BCE6400D572DB /* ExploreViewController.swift in Sources */,
 				BA5F8ABD259BD20700D572DB /* PhotoEditorViewController.swift in Sources */,
+				BA4A8FAC259FB80200674FCA /* ProfileTabsCollectionReusableView.swift in Sources */,
 				BA5F8AA4259BD04300D572DB /* RegistrationViewController.swift in Sources */,
 				BA5F8A79259BCC1900D572DB /* Food_Discovery.xcdatamodeld in Sources */,
 				BA5F8A71259BCC1900D572DB /* SceneDelegate.swift in Sources */,
 				BA5F8A94259BCEE300D572DB /* NotificationsViewController.swift in Sources */,
+				BA10366E25A0DC3E00A07745 /* Models.swift in Sources */,
 				BA5F8A98259BCF0F00D572DB /* ProfileViewController.swift in Sources */,
 				BA5F8ABA259BD1AD00D572DB /* SearchResultViewController.swift in Sources */,
 				BA5F8ADC259BE5A200D572DB /* DBManager.swift in Sources */,
+				BA4A8FA5259FB71E00674FCA /* PhotoCollectionViewCell.swift in Sources */,
 				BADCE5E8259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift in Sources */,
 				BA5F8A91259BCEAD00D572DB /* CameraViewController.swift in Sources */,
 			);
