@@ -41,6 +41,10 @@
 		BA65896F25A80D3E008822E4 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65896E25A80D3E008822E4 /* UserFollowTableViewCell.swift */; };
 		BA65897225A80E63008822E4 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65897125A80E63008822E4 /* NotificationFollowEventTableViewCell.swift */; };
 		BA65897525A80EF9008822E4 /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65897425A80EF9008822E4 /* NoNotificationsView.swift */; };
+		BA65898D25A811C4008822E4 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65898C25A811C4008822E4 /* IGFeedPostActionsTableViewCell.swift */; };
+		BA65899025A8120F008822E4 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65898F25A8120F008822E4 /* IGFeedPostTableViewCell.swift */; };
+		BA65899325A81248008822E4 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65899225A81248008822E4 /* IGFeedPostHeaderTableViewCell.swift */; };
+		BA65899625A81281008822E4 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65899525A81281008822E4 /* IGFeedPostGeneralTableViewCell.swift */; };
 		BA8B1B4E259CD0F700529703 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8B1B4D259CD0F700529703 /* Extensions.swift */; };
 		BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */; };
 		BADCE5E8259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */; };
@@ -89,6 +93,10 @@
 		BA65896E25A80D3E008822E4 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		BA65897125A80E63008822E4 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
 		BA65897425A80EF9008822E4 /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
+		BA65898C25A811C4008822E4 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		BA65898F25A8120F008822E4 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		BA65899225A81248008822E4 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		BA65899525A81281008822E4 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		BA8B1B4D259CD0F700529703 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -281,6 +289,10 @@
 				BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */,
 				BADCE5EA259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift */,
 				BADCE5ED259ED021004D85AA /* FeedPostGeneralTableViewCell.swift */,
+				BA65898C25A811C4008822E4 /* IGFeedPostActionsTableViewCell.swift */,
+				BA65898F25A8120F008822E4 /* IGFeedPostTableViewCell.swift */,
+				BA65899225A81248008822E4 /* IGFeedPostHeaderTableViewCell.swift */,
+				BA65899525A81281008822E4 /* IGFeedPostGeneralTableViewCell.swift */,
 			);
 			path = HomeFeed;
 			sourceTree = "<group>";
@@ -417,6 +429,7 @@
 				BA5F8AA0259BCFEC00D572DB /* LoginViewController.swift in Sources */,
 				BADCE5EB259ECFDC004D85AA /* FeedPostActionsTableViewCell.swift in Sources */,
 				BA5F8A73259BCC1900D572DB /* HomeViewController.swift in Sources */,
+				BA65899625A81281008822E4 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */,
 				BA5F8AA7259BD0B300D572DB /* SettingsViewController.swift in Sources */,
 				BA65897525A80EF9008822E4 /* NoNotificationsView.swift in Sources */,
@@ -427,6 +440,7 @@
 				BA65897225A80E63008822E4 /* NotificationFollowEventTableViewCell.swift in Sources */,
 				BA5F8AC0259BD23100D572DB /* PublishViewController.swift in Sources */,
 				BA4A8FA9259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
+				BA65899325A81248008822E4 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				BA5F8ADF259BE6FC00D572DB /* AuthManager.swift in Sources */,
 				BA5F8A8E259BCE6400D572DB /* ExploreViewController.swift in Sources */,
 				BA65896F25A80D3E008822E4 /* UserFollowTableViewCell.swift in Sources */,
@@ -435,6 +449,7 @@
 				BA65896C25A80C42008822E4 /* NotificationLikeEventTableViewCell.swift in Sources */,
 				BA5F8AA4259BD04300D572DB /* RegistrationViewController.swift in Sources */,
 				BA5F8A79259BCC1900D572DB /* Food_Discovery.xcdatamodeld in Sources */,
+				BA65899025A8120F008822E4 /* IGFeedPostTableViewCell.swift in Sources */,
 				BA5F8A71259BCC1900D572DB /* SceneDelegate.swift in Sources */,
 				BA5F8A94259BCEE300D572DB /* NotificationsViewController.swift in Sources */,
 				BA10366E25A0DC3E00A07745 /* Models.swift in Sources */,
@@ -442,6 +457,7 @@
 				BA5F8ABA259BD1AD00D572DB /* SearchResultViewController.swift in Sources */,
 				BA5F8ADC259BE5A200D572DB /* DBManager.swift in Sources */,
 				BA4A8FA5259FB71E00674FCA /* PhotoCollectionViewCell.swift in Sources */,
+				BA65898D25A811C4008822E4 /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				BADCE5E8259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift in Sources */,
 				BA5F8A91259BCEAD00D572DB /* CameraViewController.swift in Sources */,
 			);
