@@ -6,12 +6,20 @@
 //
 
 import Foundation
-public enum UserPostType {
-    case photo, vedeo
-}
 
 enum Gender {
-    case male, female
+    case male, female, other
+}
+
+struct User {
+    let username: String
+    let bio: String
+    let name: (first: String, last: String)
+    let profilePhoto: URL
+    let birthDate: Date
+    let gender: Gender
+    let counts: UserCount
+    let joinDate: Date
 }
 
 struct UserCount {
@@ -20,33 +28,28 @@ struct UserCount {
     let posts: Int
 }
 
-struct User {
-    let username: String
-    let name: (first: String, last:String)
-    let birthDate: Date
-    let joinDate: Date
-    let gender : Gender
-    let bio: String
-    let counts :UserCount
+public enum UserPostType: String {
+    case photo = "Photo"
+    case video = "Video"
 }
 
+/// Represents a user post
 public struct UserPost {
-    let taggedUsers:[String]
-    let createdDate: Date
     let identifier: String
     let postType: UserPostType
-    let comments: [Comment]
-    let postURL: URL
+    let thumbnailImage: URL
+    let postURL: URL // either video URL or full resolution photo
     let caption: String?
-    let likeCount: [Like]
-    let thumbnaiImage: URL
-    
+    let likeCount: [PostLike]
+    let comments: [PostComment]
+    let createdDate: Date
+    let taggedUsers: [String]
+    let owner: User
 }
 
-struct Like {
+struct PostLike {
     let username: String
     let postIdentifier: String
-    
 }
 
 struct CommentLike {
@@ -54,10 +57,10 @@ struct CommentLike {
     let commentIdentifier: String
 }
 
-struct Comment {
+struct PostComment {
     let identifier: String
     let username: String
     let text: String
     let createdDate: Date
-    let likes : [CommentLike]
+    let likes: [CommentLike]
 }

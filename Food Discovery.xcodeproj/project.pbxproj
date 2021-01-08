@@ -37,6 +37,10 @@
 		BA5F8ADC259BE5A200D572DB /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8ADB259BE5A200D572DB /* DBManager.swift */; };
 		BA5F8ADF259BE6FC00D572DB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8ADE259BE6FC00D572DB /* AuthManager.swift */; };
 		BA5F8AE2259BE74700D572DB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F8AE1259BE74700D572DB /* StorageManager.swift */; };
+		BA65896C25A80C42008822E4 /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65896B25A80C42008822E4 /* NotificationLikeEventTableViewCell.swift */; };
+		BA65896F25A80D3E008822E4 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65896E25A80D3E008822E4 /* UserFollowTableViewCell.swift */; };
+		BA65897225A80E63008822E4 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65897125A80E63008822E4 /* NotificationFollowEventTableViewCell.swift */; };
+		BA65897525A80EF9008822E4 /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65897425A80EF9008822E4 /* NoNotificationsView.swift */; };
 		BA8B1B4E259CD0F700529703 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8B1B4D259CD0F700529703 /* Extensions.swift */; };
 		BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */; };
 		BADCE5E8259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */; };
@@ -81,6 +85,10 @@
 		BA5F8ADB259BE5A200D572DB /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		BA5F8ADE259BE6FC00D572DB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		BA5F8AE1259BE74700D572DB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		BA65896B25A80C42008822E4 /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
+		BA65896E25A80D3E008822E4 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		BA65897125A80E63008822E4 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		BA65897425A80EF9008822E4 /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
 		BA8B1B4D259CD0F700529703 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BADCE5E3259ECCCC004D85AA /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		BADCE5E7259ECF9C004D85AA /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +172,7 @@
 				BADCE5E2259ECC5A004D85AA /* Cells */,
 				BA5F8A8B259BCD2C00D572DB /* Storyboards */,
 				BA5F8A7A259BCC1B00D572DB /* Assets.xcassets */,
+				BA65897425A80EF9008822E4 /* NoNotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,12 +253,23 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		BA65896A25A80C20008822E4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BA65896B25A80C42008822E4 /* NotificationLikeEventTableViewCell.swift */,
+				BA65897125A80E63008822E4 /* NotificationFollowEventTableViewCell.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		BADCE5E2259ECC5A004D85AA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BA65896A25A80C20008822E4 /* Notification */,
 				BADCE5E6259ECF48004D85AA /* HomeFeed */,
 				BA4A8FA0259F93A500674FCA /* FormTableViewCell.swift */,
 				BA4A8FA4259FB71E00674FCA /* PhotoCollectionViewCell.swift */,
+				BA65896E25A80D3E008822E4 /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -399,16 +419,20 @@
 				BA5F8A73259BCC1900D572DB /* HomeViewController.swift in Sources */,
 				BADCE5E4259ECCCC004D85AA /* FeedPostTableViewCell.swift in Sources */,
 				BA5F8AA7259BD0B300D572DB /* SettingsViewController.swift in Sources */,
+				BA65897525A80EF9008822E4 /* NoNotificationsView.swift in Sources */,
 				BA4A8FA1259F93A500674FCA /* FormTableViewCell.swift in Sources */,
 				BA5F8A6F259BCC1900D572DB /* AppDelegate.swift in Sources */,
 				BA5F8AB0259BD13800D572DB /* ListViewController.swift in Sources */,
 				BA8B1B4E259CD0F700529703 /* Extensions.swift in Sources */,
+				BA65897225A80E63008822E4 /* NotificationFollowEventTableViewCell.swift in Sources */,
 				BA5F8AC0259BD23100D572DB /* PublishViewController.swift in Sources */,
 				BA4A8FA9259FB7AF00674FCA /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				BA5F8ADF259BE6FC00D572DB /* AuthManager.swift in Sources */,
 				BA5F8A8E259BCE6400D572DB /* ExploreViewController.swift in Sources */,
+				BA65896F25A80D3E008822E4 /* UserFollowTableViewCell.swift in Sources */,
 				BA5F8ABD259BD20700D572DB /* PhotoEditorViewController.swift in Sources */,
 				BA4A8FAC259FB80200674FCA /* ProfileTabsCollectionReusableView.swift in Sources */,
+				BA65896C25A80C42008822E4 /* NotificationLikeEventTableViewCell.swift in Sources */,
 				BA5F8AA4259BD04300D572DB /* RegistrationViewController.swift in Sources */,
 				BA5F8A79259BCC1900D572DB /* Food_Discovery.xcdatamodeld in Sources */,
 				BA5F8A71259BCC1900D572DB /* SceneDelegate.swift in Sources */,
